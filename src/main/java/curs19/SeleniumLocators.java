@@ -81,7 +81,7 @@ public class SeleniumLocators extends BaseTest{
 	}
 	@Test(priority=7)
 	public void cssSelectorLocator() {
-		driver.findElement(By.cssSelector("input[id='author']")).sendKeys("Jhon Wick");		
+		driver.findElement(By.cssSelector("input[id='author']")).sendKeys("John Wick");		
 	}
 	@Test(priority=8)
 	public void xPathLocator() {
