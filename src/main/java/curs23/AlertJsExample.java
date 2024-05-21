@@ -52,8 +52,7 @@ public class AlertJsExample extends BaseTest {
 			driver.navigate().to("https://keybooks.ro/events_calendar/");
 
 			driver.findElement(By.cssSelector("div[id='promptBtn']>button")).click();
-			
-			
+						
 			//driver.switchTo().alert().accept();
 			
 			Alert alertaJs = driver.switchTo().alert();

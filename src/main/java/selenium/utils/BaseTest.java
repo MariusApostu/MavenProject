@@ -1,5 +1,7 @@
 package selenium.utils;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -15,7 +17,8 @@ public class BaseTest {
 		//EdgeDriver();
 		//System.set.property("webdriver.chrome.driver", "path to chromedriver");
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://keybooks.ro/");
 		
 	}
